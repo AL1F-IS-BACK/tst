@@ -296,32 +296,34 @@ mtd,cp_xdx,cokix=[],[],[]
 def clear():
  os.system('clear')
 def banner():
-	def meyexudi():
-  #os.system('clear')
+def approval():
+  os.system('clear')
   print(logo)
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
+
   try:
-    httpCaht = requests.get('https://github.com/AL1F-IS-BACK/THE-AL1F/blob/main/aprv.txt').text
+    httpCaht = requests.get('https://raw.githubusercontent.com/MARWAN-TECH404/SSG/main/AprOVl.txt').text
     if id in httpCaht:
-      print(fuckyoursali)
-      print(hedaborakarent)
+      print("\33[1;32mYOUR KEY IS APPROVED.")
       msg = str(os.geteuid())
-      #time.sleep(0.5)
-      print()
+      time.sleep(0.5)
+      rehan()
       pass
     else:
-      print(meyermarexudi)
-     #print(" \033[32;1m[+] Your Kay : "+id)
-      print(' \x1b[38;5;208m╔══[𝟷]💥  FREE-FIRE-TIK-TOK- ID CLONING')      
-      print(' \x1b[1;93m║══[𝟸]💥  OK ID WILL BE LOGIN 100%')
-      print(' \x1b[1;97m║══[3]💥  WI-FI  AND DATA BOTH WORKING 100%')
-      #os.system('espeak -a 300 " Hello,   Sir,  Assalamualaikum,   I,   Am,    ADNAN,   of,   TEAM,   𝐀𝐝𝐧𝐚𝐧→𝐊𝐢𝐧𝐠,    Please,   Send,   Your,   Key,"')
-      print(" \x1b[0m║══[4] YOUR KEY : "+id)
-      input(' \033[1;30m╚══[5] IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https:facebook.com/freelancer.alif.09'),approval()      
+      print("YOUR KEY : "+id)
+      print('\33[1;37m----------------------------------------------')
+      print("[•] \33[1;32mNOTE:")
+      print("\033[1;32mTOOL IS PAID BUT YOU HAVE TO\nGET PAYMENT FIRST.")
+      print('\33[1;37m----------------------------------------------')
+      print ('IF U DONT WANT TO BUY PLS DONT PRESS ENTER')
+      input('IF U WANT TO BUY THEN PRESS ENTER ')
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+923189141630?text='+tks),approval()
       time.sleep(1)
-      meyexudi()      
+      approval()
+  except:
+    sys.exit()
+approval()
     #os.system('clear')
     print(f"""   
        d8888 888       d888   8888888888 
