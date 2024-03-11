@@ -297,7 +297,7 @@ def clear():
  os.system('clear')
 def banner():
 	def meyexudi():
-  os.system('clear')
+  #os.system('clear')
   print(logo)
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
