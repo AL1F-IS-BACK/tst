@@ -315,6 +315,10 @@ d88P     888 88888888 8888888 888
 \033[1;32m║  \033[1;36m[•]  TOOL STATUS  : \033[1;36mRANDOM CLONE           \033[1;32m║
 \033[1;32m║  \033[1;91m[•]  TOOL VERSION : \033[1;91m0.1              \033[1;32m      ║
 \033[1;32m╚═════════════════════════════════════════════╝{P}""")
+#----------------------linex-------------------------#
+def linex():
+	print(f'{warna}═════════════════════════════════════════════{B}')
+
 #____APPROVAL SYSTEM ADD_____#
 def meyexudi():
   os.system('clear')
@@ -342,9 +346,6 @@ def meyexudi():
       tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https:facebook.com/freelancer.alif.09'),approval()      
       time.sleep(1)
       meyexudi()
-#----------------------linex-------------------------#
-def linex():
-	print(f'{warna}═════════════════════════════════════════════{B}')
     
 c0=('ht')
 c4=('tps://')
