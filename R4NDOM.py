@@ -341,8 +341,8 @@ def meyexudi():
       #print(' \x1b[1;95m║══[𝟸]💥  15 DAY 250 TAKA ')
       #print(' \x1b[38;5;50m║══[𝟸]💥  30 DAY 500 TAKA ')
       print(" \x1b[0m║══[𝟸] YOUR KEY : "+id)
-      input(' \033[1;30m╚══[𝟹] IF U WANT TO BUY THEN PRESS ENTER ')
-      os.system('espeak -a 300 "Welcome To ALIF Tools"')	    
+      os.system('espeak -a 300 "Welcome To ALIF Tools"')    
+      input(' \033[1;30m╚══[𝟹] IF U WANT TO BUY THEN PRESS ENTER ')    
       tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('xdg-open https://facebook.com/freelancer.alif.09'),approval()      
       time.sleep(1)
       meyexudi()
@@ -350,33 +350,6 @@ def meyexudi():
     sys.exit()
 meyexudi()
 #os.system("python SOJIB .py")
-def naima():
-	print('-------------------')
-print(logo)
-os.system('espeak -a 300 " Please,   Type,   Your,   Name,   Sir,"')
-uname =input('\033[1;91m[\033[1;91m•\033[1;91m]\033[1;33m WHAT IS YOUR NAME \033[1;91m: \33[1;31m')
-os.system('espeak -a 300 " Welcome,   to,  Cyber Alif ,  PAID,   Tools"')
-def back():
-	login()
-	
-	import getpass
-
-attemps = 0
-
-while attemps < 12345677901:
-    username = input('\033[1;91m[\033[1;92m√\033[1;91m]\x1b[38;5;50m ENTER USERNAME: ')
-    password = input('\033[1;95m[\033[1;95m√\033[1;95m]\x1b[38;5;50m ENTER PASSWORD: ')
-
-    if username == 'ALIF' and password == 'SABANA':
-        print(' \033[0;95mYou Have Successfully Logged in.')
-        os.system('espeak -a 300 " Successfully,   Log,  In,  Sir"')
-        break
-    else:
-        print(' Incorrect Pass Please Trying ')
-        attemps += 1
-        continue
-os.system('clear')
-pass
 #----------------------linex-------------------------#
 def linex():
 	print(f'{warna}═════════════════════════════════════════════{B}')
