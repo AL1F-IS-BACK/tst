@@ -362,16 +362,16 @@ def mainx():
     Alif = input(f'{wt}Select menu {M}:{H} ')
     if Alif in ["00000","0000000"]:
         exit()
-    elif Alif in ["2","02"]:
-        exit()
+    #elif Alif in ["2","02"]:
+        #exit()
     #elif Alif in ["0000","003"]:
-        cr()
+        #cr()
     elif Alif in ["1","01"]:
         x8()
     #elif Alif in ["5","05"]:
-        sep()
+        #sep()
     #elif Alif in ["6","06"]:
-     dupcutter()
+     #dupcutter()
     elif Alif in ["2","02"]:
      os.system("xdg-open https://github.com/AL1F-IS-BACK");mainx()
     elif Alif in ["3","03"]:
