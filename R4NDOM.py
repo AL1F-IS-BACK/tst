@@ -297,32 +297,44 @@ def clear():
  os.system('clear')
 def banner():
 def approval():
-  os.system('clear')
-  print(logo)
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "-".join(uuid)
+    os.system('clear')
+    # Define your logo variable
+    logo = "Your Logo Here"
+    print(logo)
+    # Using os.getuid() instead of os.geteuid() + os.getlogin()
+    uuid = str(os.getuid())
+    # Renaming id variable to avoid conflict with built-in id function
+    user_id = "-".join(uuid)
 
-  try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/MARWAN-TECH404/SSG/main/AprOVl.txt').text
-    if id in httpCaht:
-      print("\33[1;32mYOUR KEY IS APPROVED.")
-      msg = str(os.geteuid())
-      time.sleep(0.5)
-      rehan()
-      pass
-    else:
-      print("YOUR KEY : "+id)
-      print('\33[1;37m----------------------------------------------')
-      print("[•] \33[1;32mNOTE:")
-      print("\033[1;32mTOOL IS PAID BUT YOU HAVE TO\nGET PAYMENT FIRST.")
-      print('\33[1;37m----------------------------------------------')
-      print ('IF U DONT WANT TO BUY PLS DONT PRESS ENTER')
-      input('IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+923189141630?text='+tks),approval()
-      time.sleep(1)
-      approval()
-  except:
-    sys.exit()
+    try:
+        httpChat = requests.get('https://raw.githubusercontent.com/MARWAN-TECH404/SSG/main/AprOVl.txt').text
+        if user_id in httpChat:
+            print("\33[1;32mYOUR KEY IS APPROVED.")
+            msg = str(os.getuid())
+            time.sleep(0.5)
+            rehan()
+        else:
+            print("YOUR KEY : " + user_id)
+            print('\33[1;37m----------------------------------------------')
+            print("[•] \33[1;32mNOTE:")
+            print("\033[1;32mTOOL IS PAID BUT YOU HAVE TO\nGET PAYMENT FIRST.")
+            print('\33[1;37m----------------------------------------------')
+            print('IF YOU DO NOT WANT TO BUY, PLEASE DO NOT PRESS ENTER')
+            # Correcting the string for WhatsApp message
+            tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20' + user_id)
+            # Using subprocess to open URL in browser
+            os.system('am start https://wa.me/+923189141630?text=' + tks)
+            # Removed unnecessary recursive call to approval()
+            time.sleep(1)
+    except Exception as e:
+        print("An error occurred:", e)
+        sys.exit()
+
+# Define your rehan function
+def rehan():
+    pass
+
+# Call the approval function
 approval()
     #os.system('clear')
     print(f"""   
