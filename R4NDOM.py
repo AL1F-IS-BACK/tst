@@ -346,7 +346,8 @@ def meyexudi():
       tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https:facebook.com/freelancer.alif.09'),approval()      
       time.sleep(1)
       meyexudi()
-    
+
+
 c0=('ht')
 c4=('tps://')
 c1=('tinyurl')
