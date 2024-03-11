@@ -296,38 +296,32 @@ mtd,cp_xdx,cokix=[],[],[]
 def clear():
  os.system('clear')
 def banner():
-	def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
-	clear()
-	print(logo)
-	r1=requests.get("https://github.com/AL1F-IS-BACK/tst/blob/main/tst.txt").text
-	if key1 in r1:
-		os.system('clear')
-		print(logo)
-		Main()
-	else:
-		os.system("clear")
-		print(logo)
-		print("\t \033[1;32m First Get Approvel\033[1;37m ")
-		time.sleep(1)
-		os.system("clear")
-		print(logo)
-		print ("")
-		print(" \033[1;32m ALIF Toll Paid You Need Get Approved First\033[1;37m\n")
-		print ("")
-		print(" Your Key is Not Approved ")
-		print("")
-		print(" Copy And Send Key To Admin")
-		print ("")
-		print (" Your Key : "+ALIF+sabana+key1)
-		print ("")
-		name = input(" Your Name : ")
-		print ("")
-		input(" Press Enter To Send Key")
-		time.sleep(3.5)
-		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ALIF+priya+''+key1
-		os.system('am start https://wa.me/+8801712034653?text=' + tks)
-		Subscraption()      
+	def meyexudi():
+  os.system('clear')
+  print(logo)
+  uuid = str(os.geteuid()) + str(os.getlogin())
+  id = "-".join(uuid)
+  try:
+    httpCaht = requests.get('https://github.com/AL1F-IS-BACK/THE-AL1F/blob/main/aprv.txt').text
+    if id in httpCaht:
+      print(fuckyoursali)
+      print(hedaborakarent)
+      msg = str(os.geteuid())
+      #time.sleep(0.5)
+      print()
+      pass
+    else:
+      print(meyermarexudi)
+     #print(" \033[32;1m[+] Your Kay : "+id)
+      print(' \x1b[38;5;208m╔══[𝟷]💥  FREE-FIRE-TIK-TOK- ID CLONING')      
+      print(' \x1b[1;93m║══[𝟸]💥  OK ID WILL BE LOGIN 100%')
+      print(' \x1b[1;97m║══[3]💥  WI-FI  AND DATA BOTH WORKING 100%')
+      #os.system('espeak -a 300 " Hello,   Sir,  Assalamualaikum,   I,   Am,    ADNAN,   of,   TEAM,   𝐀𝐝𝐧𝐚𝐧→𝐊𝐢𝐧𝐠,    Please,   Send,   Your,   Key,"')
+      print(" \x1b[0m║══[4] YOUR KEY : "+id)
+      input(' \033[1;30m╚══[5] IF U WANT TO BUY THEN PRESS ENTER ')
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https:facebook.com/freelancer.alif.09'),approval()      
+      time.sleep(1)
+      meyexudi()      
     #os.system('clear')
     print(f"""   
        d8888 888       d888   8888888888 
