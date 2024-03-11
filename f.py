@@ -985,7 +985,7 @@ def m4(idx,pwv):
 def f1(idf,pwv):
   global loop,ok,cp
   animasi = random.choice(["\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F","\x1b[1;97mAL1F","\x1b[1;91mAL1F","\x1b[1;92mAL1F","\x1b[1;93mAL1F","\x1b[1;94mAL1F","\x1b[1;95mAL1F","\x1b[1;96mAL1F"])
-  sys.stdout.write(f'\r{P} [{animasi}-{H}F1{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
+  sys.stdout.write(f'\r{P} [{animasi}-{H}M6{P}] ({B}%s{P}){U}+{H}OK{P}({GREEN}%s{P})'%(loop,ok)),
   sys.stdout.flush()
   ua = random.choice(usragent)
   ses = requests.Session()
