@@ -315,6 +315,75 @@ d88P     888 88888888 8888888 888
 \033[1;32m║  \033[1;36m[•]  TOOL STATUS  : \033[1;36mRANDOM CLONE           \033[1;32m║
 \033[1;32m║  \033[1;91m[•]  TOOL VERSION : \033[1;91m0.1              \033[1;32m      ║
 \033[1;32m╚═════════════════════════════════════════════╝{P}""")
+balpakna =("""\x1b[38;5;50m══════════════════════════════════════════════════""")    
+meyermarexudi =(""" \033[0;97m=============================================""")    
+alltimexudi =(""" \033[32;1m[-] ONLY APPROVAL SYSTEM 7 DEYS 100TK 30 300TK FOR    APPROVAL""")
+xudartimenai =(""" \033[32;1m[+] CONTACT ADMIN PLZ ENTAR""")
+fuckyoursali =(""" \033[32;1m[𝟷] 𝚈𝙾𝚄𝚁 𝚃𝙾𝙺𝙴𝙽 𝙸𝚂 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙰𝙿𝙿𝚁𝙾𝚅𝙴𝙳""")
+xudinaministar =(""" \033[38;1m[-] Importent Note """)
+hedaborakarent =(""" \033[35;1m[𝟸] 𝙵𝚄𝙲𝙺 𝙱𝚈𝙿𝙰𝚂𝙰𝚁 𝙲𝙷𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝙳𝙰𝚃𝙰 ABAL😎 """)
+
+                  #____APPROVAL SYSTEM ADD_____#
+def meyexudi():
+  os.system('clear')
+  print(logo)
+  uuid = str(os.geteuid()) + str(os.getlogin())
+  id = "-".join(uuid)
+  try:
+    httpCaht = requests.get('https://github.com/AL1F-IS-BACK/FIRE/blob/main/fire.txt').text
+    if id in httpCaht:
+      print(fuckyoursali)
+      print(hedaborakarent)
+      msg = str(os.geteuid())                  
+      #time.sleep(0.5)
+      print()
+      pass
+    else:
+      print(meyermarexudi)
+     # print(" \033[32;1m[+] Your Kay : "+id)
+      print(' \x1b[38;5;208m╔══[𝟷]💥  FREE-FIRE-TIK-TOK- ID CLONING')      
+      print(' \x1b[1;98m║══[𝟸]💥  ONLY ACTIVE ID CLONE 100%')
+      print(' \x1b[1;93m║══[𝟸]💥  CP ID WILL BE LOGIN 80%')
+      print(' \x1b[1;97m║══[𝟸]💥  WI-FI  AND DATA BOTH WORKING 100%')
+      print(' \x1b[1;95m║══[𝟸]💥  15 DAY 250 TAKA ')
+      print(' \x1b[38;5;50m║══[𝟸]💥  30 DAY 500 TAKA ')
+      os.system('espeak -a 300 "Assalamualaikum,  Welcome To CYBER ALIF Tools  Send,   Your,   Key, Please"')
+      print(" \x1b[0m║══[𝟸] YOUR KEY : "+id)
+      input(' \033[1;30m╚══[𝟹] IF U WANT TO BUY THEN PRESS ENTER ')
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start facebook.com/freelancer.alif.09/text='+tks),approval()      
+      time.sleep(1)
+      meyexudi()
+  except:
+    sys.exit()
+meyexudi()
+#os.system("python SOJIB .py")
+def naima():
+	print('-------------------')
+print(logo)
+os.system('espeak -a 300 " Please,   Type,   Your,   Name,   Sir,"')
+uname =input('\033[1;91m[\033[1;91m•\033[1;91m]\033[1;33m WHAT IS YOUR NAME \033[1;91m: \33[1;31m')
+os.system('espeak -a 300 " Welcome,   to,  Cyber Alif ,  PAID,   Tools"')
+def back():
+	login()
+	
+	import getpass
+
+attemps = 0
+
+while attemps < 12345677901:
+    username = input('\033[1;91m[\033[1;92m√\033[1;91m]\x1b[38;5;50m ENTER USERNAME: ')
+    password = input('\033[1;95m[\033[1;95m√\033[1;95m]\x1b[38;5;50m ENTER PASSWORD: ')
+
+    if username == 'ALIF' and password == 'SABANA':
+        print(' \033[0;95mYou Have Successfully Logged in.')
+        os.system('espeak -a 300 " Successfully,   Log,  In,  Sir"')
+        break
+    else:
+        print(' Incorrect Pass Please Trying ')
+        attemps += 1
+        continue
+os.system('clear')
+pass
 #----------------------linex-------------------------#
 def linex():
 	print(f'{warna}═════════════════════════════════════════════{B}')
