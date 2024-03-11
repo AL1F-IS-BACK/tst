@@ -295,7 +295,8 @@ c8=f'{dot}[{H}017{M}={H}019{M}={H}016{M}={H}013{M}={H}018{M}={H}014{M}={H}015{P}
 mtd,cp_xdx,cokix=[],[],[]
 def clear():
  os.system('clear')
-#def banner():
+def banner():
+	
 def approval():
     os.system('clear')
     # Define your logo variable
