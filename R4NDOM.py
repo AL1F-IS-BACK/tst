@@ -326,7 +326,7 @@ hedaborakarent =(""" \033[35;1m[𝟸] 𝙵𝚄𝙲𝙺 𝙱𝚈𝙿𝙰𝚂𝙰�
                   #____APPROVAL SYSTEM ADD_____#
 def meyexudi():
   os.system('clear')
-  print(logo)
+  #print(banner)
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
