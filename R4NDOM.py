@@ -319,7 +319,7 @@ d88P     888 88888888 8888888 888
                   #____APPROVAL SYSTEM ADD_____#
 def meyexudi():
   os.system('clear')
-  #print(banner)
+  banner()
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
