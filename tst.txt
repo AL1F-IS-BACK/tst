@@ -1,12 +1,2 @@
-1-0-2-0-3-u-0-_-a-2-0-3  Abronil
-1-0-0-6-2-u-0-_-a-6-2    my emulator
-1-0-3-4-9-u-0-_-a-3-4-9  yeamin
 1-0-1-6-9-u-0-_-a-1-6-9  my phone
-1-0-3-4-8-u-0-_-a-3-4-8  sohanur vai
-1-0-2-0-9-u-0-_-a-2-0-9  Ashiqur Vai
-1-0-1-9-9-u-0-_-a-1-9-9  shakib vai
-AL1F-9610181600222BEFDEW3313SMPP
-AL1F-26001I9252517RAMUHT5911SMPP
-1-0-4-8-4-u-0-_-a-4-8-4  sakib
-1-0-2-1-1-u-0-_-a-2-1-1  shihab
-1-0-1-9-3-u-0-_-a-1-9-3
+CYB3R10062u0_a62AL1F
